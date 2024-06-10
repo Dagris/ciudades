@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Ciudades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mis Ciudades Favoritas</h1>
+        <form id="city-form">
+            <input type="text" id="city-name" placeholder="Nombre de la ciudad" required>
+            <input type="text" id="country" placeholder="País" required>
+            <input type="text" id="best-month" placeholder="Mejor mes para visitarla" required>
+            <button type="submit">Agregar Ciudad</button>
+        </form>
+        <ul id="city-list"></ul>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
